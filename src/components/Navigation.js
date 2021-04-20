@@ -23,7 +23,7 @@ function Navigation() {
 
   const searchItem = async () => {
     setLoading(true);
-    const fetchItem = await fetch(`http://localhost:5000/menudata/`);
+    const fetchItem = await fetch(`https://next-mysql-olive.vercel.app/api/hello`);
     const item = await fetchItem.json();
     setMenuValues(item);
     setLoading(false);
